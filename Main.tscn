@@ -9,9 +9,15 @@ size = Vector3(60, 2, 60)
 [node name="Main" type="Node"]
 
 [node name="Ground" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.08165e-12, -1, 2.08165e-12)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Ground"]
 shape = SubResource("BoxShape3D_fj8bb")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Ground"]
 mesh = SubResource("BoxMesh_qcp3x")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.729136, 0.684369, 0, -0.684369, 0.729136, 0, 7.43124, 0)
+shadow_enabled = true
+shadow_bias = 0.942
