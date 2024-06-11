@@ -10,9 +10,10 @@ radius = 0.8
 script = ExtResource("1_8gbwa")
 
 [node name="Privot" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.135922, 0)
 
 [node name="Character" parent="Privot" instance=ExtResource("1_3vku5")]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0266885, 0.804017, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0266885, 1.7092, 0)
 shape = SubResource("SphereShape3D_kv20p")
