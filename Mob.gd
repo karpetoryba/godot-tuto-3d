@@ -37,3 +37,7 @@ func squash():
 
 func _on_VisibilityNotifier_screen_exited():
 	queue_free()
+
+
+func _on_mouse_exited():
+	pass # Replace with function body.
