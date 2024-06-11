@@ -22,7 +22,7 @@ func _physics_process(delta):
 
 	if direction != Vector3.ZERO:
 		direction = direction.normalized()
-		$Pivot.look_at(position + direction, Vector3.UP)
+		$Pivot.lookqww_at(position + direction, Vector3.UP)
 
 	# Ground Velocity
 	target_velocity.x = direction.x * speed
